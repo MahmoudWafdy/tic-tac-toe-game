@@ -63,18 +63,15 @@ const checkCross = ()=>{
             }
         }
 }
-const checkCrossReverse = ()=>{
+const checkCrossReverse = () => {
     let col = 2;
-        while(col >= 0 ){
-            if(board[col][NUMBER_OF_ROWS - 1 -col] !== currentPlayer){
-                col = 0;
-                break;
-            }
-            col++;
-            if(col === NUMBER_OF_ROWS){
-                return true;
-            }
+    while (col >= 0) {
+        if (board[col][NUMBER_OF_ROWS - 1 - col] !== currentPlayer) {
+            return false; // Return false immediately if any element is not equal to currentPlayer
         }
+        col--; // Decrement col to move to the previous column
+    }
+    return true; // If the loop finishes without returning false, it means all elements match currentPlayer
 }
 
 const checkWin = (currentPlayer)=> {

@@ -19,6 +19,7 @@ Find the source code in this [https://github.com/MahmoudWafdy/tic-tac-toe-game).
 
 ## Preview
 ![website photo](./1.JPG) 
+![website photo](./2.JPG) 
 
 ## How to Run
 1. Clone the repository: `git clone https://github.com/your-username/frontmeetor-challenge.git`
